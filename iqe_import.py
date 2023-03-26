@@ -652,7 +652,7 @@ def make_mesh_data(iqmodel, name, meshes, amtobj, dir):
 	link_object(obj)
 
 	# Set the mesh to single-sided to spot normal errors
-	mesh.show_double_sided = False
+	mesh.use_mirror_topology = False
 
 	has_vn = len(iqmodel.meshes[0].vn) > 0
 	has_vt = len(iqmodel.meshes[0].vt) > 0
@@ -673,7 +673,7 @@ def make_mesh_data(iqmodel, name, meshes, amtobj, dir):
 
 	for iqmesh in meshes:
 		iqmesh.faces = [x[::-1] for x in iqmesh.faces]
-		iqmesh.vt = [(u,1-v) for (u,v) in iqmesh.vt]
+		# iqmesh.vt = [(u,1-v) for (u,v) in iqmesh.vt]
 
 	# Blender has texcoords and colors on faces rather than vertices.
 	# Create material slots for all materials used.
