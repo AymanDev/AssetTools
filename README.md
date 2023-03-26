@@ -31,7 +31,7 @@ If you need mirrored UV's just uncomment this line: https://github.com/AymanDev/
 ## Installation
 
 1. Go to https://github.com/AymanDev/IQE-IQM-3D-Asset-Tools/releases and download `iqe_import.zip`
-2. Go to your addons folder in blender which is located here: `C:\Users\{username}\AppData\Roaming\Blender Foundation\Blender\{version}\scripts\addons` where is `{username}` will be your name of the PC and `{version}` will be version of the blender you use`
+2. Go to your addons folder in blender which is located here: `C:\Users\{username}\AppData\Roaming\Blender Foundation\Blender\{version}\scripts\addons` where is `{username}` will be your name of the PC and `{version}` will be version of the blender you use
 3. Unpack all files from zip in addons folder
 4. Then in blender `Edit -> Preferences -> Add-ons` and search for IQE and select checkboxes for features you need
 5. That's it you can now import `.iqe` models
